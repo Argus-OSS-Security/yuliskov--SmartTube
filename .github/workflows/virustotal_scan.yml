@@ -1,14 +1,15 @@
 name: VirusTotal Scan
 
-on:
-  release:
-    types: [published]
-  workflow_dispatch:
-    inputs:
-      release_tag:
-        description: 'Release tag to scan'
-        required: true
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   release:
+#     types: [published]
+#   workflow_dispatch:
+#     inputs:
+#       release_tag:
+#         description: 'Release tag to scan'
+#         required: true
+# 
 jobs:
   virustotal_scan:
     permissions:

@@ -1,9 +1,10 @@
 name: "Close stale issues"
-on:
-  workflow_dispatch:
-    branches:
-    - master
-     
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     branches:
+#     - master
+#      
 jobs:
   stale:
     runs-on: ubuntu-latest
